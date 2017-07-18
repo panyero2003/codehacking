@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+//use function Symfony\Component\VarDumper\Tests\Caster\reflectionParameterFixture;
 
 class User extends Authenticatable
 {
@@ -28,6 +29,11 @@ class User extends Authenticatable
 
     {
         return $this->belongsTo('App\Role');
+    }
+
+    public function photo()
+    {
+        return $this->belongsTo('App\Photo');
     }
 
 
