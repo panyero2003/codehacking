@@ -50,6 +50,8 @@ class AdminUsersController extends Controller
      */
     public function store(UsersRequest $request)
     {
+        //$input = $request->all();
+
         if(trim($request->password)==''){
 
             $input = $request->all();

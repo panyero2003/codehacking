@@ -35,6 +35,7 @@
         {!! form::file('photo_id', null, ['class'=>'form-control']) !!}
      </div>
 
+
     <div class ="form-group">
         {!! form::label('password','Password') !!}
         {!! form::password('password',  ['class'=>'form-control']) !!}
